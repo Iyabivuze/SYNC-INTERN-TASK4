@@ -1,0 +1,112 @@
+header{
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    background-color:rgb(230,234,233);
+    padding: 15px 20px;
+}
+
+.my-logo h1 a{
+    color:rgb(167, 36, 172) ;
+    text-transform: uppercase;
+}
+.nav-bar ul{
+    display: flex;
+    gap: 30px;
+}
+.nav-bar ul li{
+    list-style-type: none;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color:rgb(35,34,39);
+    transition: all .4s;
+}
+.nav-bar ul li a:hover{
+    color:rgb(247, 0, 255);
+}
+
+.signup-button{
+    background-color:rgb(167, 36, 172) ;
+    color:rgb(231, 234, 253);
+    padding: 10px 20px;
+    cursor:pointer;
+    transition:all .4s;
+    
+}
+.signup-button:hover{
+    background-color:rgb(178, 0, 243) ;
+}
+
+.toggle{
+    display: none;
+}
+
+.nav-bar .toggle{
+    display: none;
+    font-size: 1.3rem;
+    color:rgb(35,34,39);
+    cursor:pointer;
+}
+
+/* Toggle Mobile */
+.nav-links{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:200px;
+    height:60vh;
+    background-color: rgb(230,234,233);
+    position: absolute;
+    top:0;
+    padding:20px;
+    right: 0;
+    transition: all .4s;
+    z-index:1;
+}
+.nav-links ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:20%;
+}
+.nav-links .signup-links{
+    margin-top: 250px;
+}
+.toggle-cut{
+    position: absolute;
+    top: 20px;
+    right:20px;
+    cursor:pointer;
+}
+
+@media screen and (max-width: 665px) {
+
+    .nav-bar .nav-link{
+        display: none;
+    }
+    .nav-bar .signup{
+        display: none;
+    }
+
+    .nav-bar .toggle{
+        display: flex;
+    }
+    .nav-links.active{
+        display: flex;
+    }
+    .nav-links.remove{
+        display: none;
+    }
+
+    
+
+}

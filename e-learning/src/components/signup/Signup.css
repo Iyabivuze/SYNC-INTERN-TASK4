@@ -1,0 +1,93 @@
+.login{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100vh;
+    background-color:rgb(0,0,0,0.9);
+    color:rgb(236, 247, 255);
+    display: none;
+    z-index:999;
+}
+
+.login.active{
+    display: flex;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     position: absolute;
+    top:20%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.intro p{
+    margin-top: 10px;
+}
+
+.signup-link{
+    color:rgb(167, 36, 172);
+    margin-left: 10px;
+}
+.cancel{
+    position: absolute;
+    top:60px;
+    right:100px;
+    font-size: 3rem;
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+    background-color: rgb(167, 36, 172);
+    transition: all .4s;
+    cursor:pointer
+}
+.cancel:hover{
+    background-color: rgb(125, 38, 129);
+}
+
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    position: absolute;
+    top:45%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin-top: 30px;
+}
+.login-form form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: auto;
+}
+#forgot-password a{
+    color: rgb(167, 36, 172);
+}
+#forgot-password{
+    float:right;
+    font-size: 14px;
+    margin-top: -15px;
+}
+.signup-form input{
+    padding:10px;
+}
+form.signup-form{
+    margin-top: 130px;
+}
+.login-btn{
+    margin: auto;
+    display: flex;
+    width: 200px;
+}

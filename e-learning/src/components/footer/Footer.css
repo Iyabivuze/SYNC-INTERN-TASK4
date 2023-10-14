@@ -1,0 +1,116 @@
+footer{
+    width: 100%;
+    padding:0 20px;
+    font-size: 15px;
+    /* background-color: rgb(167, 36, 172); */
+    /* border-top: 1px solid #000; */
+}
+.my-container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin:auto;
+    justify-content: space-between;
+    color:rgb(35,34,39);
+    /* color:rgb(243, 246, 245); */
+}
+.my-container .first{
+    width: 50%;
+}
+/* .my-container .first h1{
+    color:rgb(243, 246, 245)
+} */
+.my-container .first span{
+    margin-top: 5px;
+    color:grey;
+}
+.my-container .first p{
+    margin-top: 20px;
+}
+
+.my-container .first .icon{
+    margin:10px 5px;
+    background-color: rgb(167, 36, 172);
+    /* background-color: rgb(243, 246, 245); */
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+    padding: 4px;
+    color:rgb(243, 246, 245);
+    /* color:rgb(35,34,39); */
+
+    cursor:pointer;
+    transition:all .4s;
+}
+
+
+.my-container .first .icon:hover{
+    background-color: rgb(132, 15, 136);
+}
+
+.link {
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+}
+.link h3 {
+    font-weight: 600;
+}
+.link ul li {
+    margin-top: 5px;
+    cursor:pointer;
+    transition: all .4s;
+}
+.link ul li:hover {
+    color:rgb(247, 5, 255);
+}
+a{
+    color:rgb(35,34,39);
+        transition: all .4s;
+}
+
+.link ul a:hover {
+    color:rgb(247, 5, 255);
+}
+.last{
+    text-align:center;
+}
+.last p{
+    color:grey;
+    font-size: 14px;
+}
+.last .icon{
+    margin:10px;
+    background-color: rgb(123, 27, 126);
+    width: 23px;
+    height: 23px;
+    border-radius:50%;
+    padding: 4px;
+    color:rgb(243, 246, 245);
+    cursor:pointer;
+    transition:all .4s;
+}
+
+@media screen and (max-width: 780px){
+    .padding{
+        padding: 50px 0;
+    }
+}
+@media screen and (max-width: 560px){
+    .my-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        font-size: 14px;
+    
+    }
+    .my-container .first .icon{
+        width: 25px;
+        height: 25px;
+    }
+
+    .my-container .link ul {
+    display: flex;
+    flex-direction: column;
+    }
+}
